@@ -1,5 +1,8 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^swild.space [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.swild.space [NC]
-RewriteCond %{HTTP_HOST} ^www.simonwild.info [NC]
 RewriteRule ^(.*)$ http://simonwild.info/$1 [L,R=301,NC]
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
