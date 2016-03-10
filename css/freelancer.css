@@ -110,7 +110,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
+        padding-top: 130px;
         padding-bottom: 100px;
     }
 
@@ -456,4 +456,12 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+/* Custom Styling */
+.img-circle {
+  border-radius: 50%;
+}
+.image-width-max {
+    max-width: 20em;
 }
